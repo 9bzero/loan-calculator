@@ -1,19 +1,35 @@
-# loan-calculator
+# Loan Calculator
 
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+Calculate monthly EMI, total interest, and view a full amortization schedule for any loan.
 
-> Loan EMI calculator with amortization schedule and interest breakdown
+## Formula
+
+```
+EMI = P × r × (1 + r)ⁿ / ((1 + r)ⁿ − 1)
+```
+
+Where `P` = principal, `r` = monthly interest rate, `n` = number of months.
 
 ## Features
-- 💰 Monthly EMI calculation
-- 📊 Total payment, total interest, and principal
-- 📈 Visual principal vs interest breakdown
-- 📋 Amortization schedule (first 24 months)
-- 🎚️ Sliders for amount, rate, and term
+
+- Principal, interest rate, and loan term inputs
+- Monthly EMI result
+- Total interest paid and total payment
+- Full amortization table (month-by-month breakdown)
+- Pie chart: principal vs interest split
+- Export schedule as CSV
+
+## Stack
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=flat&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61dafb?style=flat&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646cff?style=flat&logo=vite&logoColor=white)
+
+## Run locally
 
 ```bash
 npm install && npm run dev
 ```
 
-## License
-[MIT](LICENSE)
+---
+Made by [9bzero](https://github.com/9bzero)
